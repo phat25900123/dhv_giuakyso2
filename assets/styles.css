@@ -142,16 +142,15 @@ body {
   padding-bottom: 50px;
 }
 /********************************row2***************************/
-.row2 img{
+.row2 img {
   width: 90%;
   position: relative;
   z-index: 1;
 }
-.row2 div{
+.row2 div {
   text-align: center;
 }
-.row2{
+.row2 {
   width: 50%;
   margin: auto;
-  display
 }
