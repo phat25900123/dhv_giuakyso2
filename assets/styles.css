@@ -1,0 +1,157 @@
+/*********************************Phần chung**************************/
+body {
+  margin: 0;
+  background-image: url(/assets/images/bg2.png);
+  background-size: cover;
+  min-height: 100vh;
+}
+:root {
+  --white: rgba(241, 234, 234);
+  --light: #eee7;
+  --yellow: #ffb107;
+  --title: #b8810b;
+  --dark: #555;
+}
+.container {
+  width: 900px;
+  background-image: url(/assets/images/bg.jpg);
+  background-size: 30px;
+  margin: 20px auto;
+  padding: 3rem;
+  box-sizing: border-box;
+  color: var(--light);
+  font-family: system-ui;
+  font-size: 12px;
+}
+/*********************************Tên**************************/
+.name {
+  text-align: center;
+  font-size: 2.2rem;
+  padding-bottom: 20px;
+  color: var(--white);
+}
+.name span {
+  font-weight: bold;
+}
+/********************************row1***************************/
+.row1 {
+  display: grid;
+  grid-template-columns: 1fr 30% 1fr;
+  gap: 80px;
+}
+.title {
+  color: var(--title);
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 100;
+}
+.list {
+  display: grid;
+  gap: 30px;
+  padding-bottom: 30px;
+}
+.list .item {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 10px;
+}
+.list .item .year span {
+  background-color: var(--yellow);
+  color: var(--dark);
+  font-weight: bold;
+  padding: 5px 15px 5px 5px;
+  display: block;
+  font-size: 0.8rem;
+  transform: translateY(10px);
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+.list .item .content {
+  line-height: 18px;
+}
+.list .item .content .job {
+  color: var(--white);
+  font-weight: bold;
+}
+/*********************************Liên hệ**************************/
+.contact {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.contact li {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 10px;
+}
+.contact li img {
+  width: 20px;
+}
+.contact .link {
+  border-top: 1px solid var(--light);
+  padding: 10px 0 0 0;
+}
+.contact .link li {
+  gap: 22.5px;
+}
+.contact .link li div:nth-child(1) {
+  width: 30px;
+  height: 30px;
+  background-color: var(--white);
+  color: var(--dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  line-height: 0;
+  border-radius: 50%;
+  font-size: large;
+  font-family: monospace;
+}
+/*********************************intro**************************/
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 50px;
+  padding-top: 50px;
+}
+.avatar {
+  width: 180px;
+  height: 180px;
+  background-color: var(--yellow);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px var(--dark), 0 0 0 6px var(--white);
+  position: relative;
+}
+.avatar img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 130%;
+  border-bottom-left-radius: 41%;
+  border-bottom-right-radius: 41%;
+  border-top-left-radius: 41%;
+  border-top-right-radius: 41%;
+  object-fit: cover;
+}
+.intro .content {
+  text-align: justify;
+  padding-bottom: 50px;
+}
+/********************************row2***************************/
+.row2 img{
+  width: 90%;
+  position: relative;
+  z-index: 1;
+}
+.row2 div{
+  text-align: center;
+}
+.row2{
+  width: 50%;
+  margin: auto;
+  display
+}
